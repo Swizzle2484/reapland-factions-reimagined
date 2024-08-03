@@ -1,0 +1,172 @@
+<html><head><base href="https://reapland-fashions.com/%20change%20since%20the%20menu%20name%20instead%20of%20reaplant%20factions%20change%20it%20to%20reapland%20factions%20reimagined">
+<title>Reapland Factions Reimagined - Minecraft Bedrock Realm</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: 'Minecraft', Arial, sans-serif;
+        background-color: #1a1a2e;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    header {
+        background-color: #16213e;
+        padding: 20px 0;
+        text-align: center;
+    }
+    h1 {
+        font-size: 48px;
+        margin: 0;
+        color: #a239ea;
+        text-shadow: 2px 2px #000000;
+    }
+    nav {
+        margin-top: 20px;
+    }
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+    nav a:hover {
+        color: #4e54c8;
+    }
+    .feature {
+        background-color: #16213e;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .feature h2 {
+        color: #a239ea;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: #4e54c8;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+        background-color: #a239ea;
+    }
+    #cashapp-modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+    }
+    .modal-content {
+        background-color: #16213e;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #4e54c8;
+        width: 80%;
+        max-width: 500px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: #a239ea;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Reapland Factions Reimagined</h1>
+            <nav>
+                <a href="#shop">Shop</a>
+                <a href="#crates">Crate Keys</a>
+                <a href="#factions">Factions</a>
+                <a href="#vip">VIP</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="feature" id="shop">
+            <h2>Custom In-Game Shop</h2>
+            <p>Discover our reimagined in-game shop with an extensive array of unique items, powerful weapons, and rare resources. Elevate your gameplay and conquer the Reapland realm!</p>
+        </div>
+
+        <div class="feature" id="crates">
+            <h2>Enhanced Crate Key System</h2>
+            <p>Experience our revamped Crate Key System, now with more tiers and exciting rewards. Unlock legendary items, exclusive perks, and game-changing bonuses!</p>
+        </div>
+
+        <div class="feature" id="factions">
+            <h2>Advanced Faction Mechanics</h2>
+            <p>Immerse yourself in our reimagined faction system. Create alliances, wage epic wars, and build intricate bases. Rise through the ranks and become a legendary faction leader!</p>
+        </div>
+
+        <div class="feature" id="vip">
+            <h2>Exclusive VIP Experience</h2>
+            <p>Upgrade your Reapland journey with our enhanced VIP membership. Enjoy premium perks, exclusive access to special events, and unique cosmetics for just $5!</p>
+            <a href="#" class="cta-button" id="buy-vip">Upgrade to VIP</a>
+        </div>
+    </div>
+
+    <div id="cashapp-modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>Upgrade to VIP Membership</h2>
+            <p>To unlock your VIP status, please send $5 to our Cash App:</p>
+            <h3>$RascalFox9109</h3>
+            <p>Once your payment is confirmed, you'll instantly gain access to all VIP features and benefits!</p>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("cashapp-modal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("buy-vip");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body></html>
